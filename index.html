@@ -17,30 +17,30 @@
 <link rel="stylesheet" href="styles.css">
 <script src="main.js" defer></script>
 </head>
-<body>
+<body class="home">
 <div style="width:100%;background:#460024;color:#ffffff;display:flex;flex-direction:column;overflow:hidden">
 
-<div style="width:100%;background:#460024;padding:20px 16px;box-sizing:border-box;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif">
+<div class="site-head" style="width:100%;background:transparent;padding:20px 16px;box-sizing:border-box;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif">
 <nav aria-label="Hauptnavigation" class="pill" style="max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#0b0006;border-radius:999px;padding:8px 8px 8px 10px;box-sizing:border-box">
 <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#ffffff">
 <img src="assets/logo.png" alt="" style="width:44px;height:44px;border-radius:999px;box-shadow:0 0 0 3px #ff007f">
 <span style="font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:18px;text-transform:uppercase;white-space:nowrap">LSTV</span>
 </a>
 <div class="hide-m" style="display:flex;gap:28px;align-items:center">
-<a href="news.html" style="color:#ffffff;text-decoration:none;font-weight:700;font-size:15px">News</a>
+<a href="mixed-zone.html" style="color:#ffffff;text-decoration:none;font-weight:700;font-size:15px">Mixed-Zone</a>
 <a href="index.html#videos" style="color:#ffffff;text-decoration:none;font-weight:700;font-size:15px">Videos</a>
 <a href="lattecup.html" style="color:#ffffff;text-decoration:none;font-weight:700;font-size:15px">LatteCup</a>
 <a href="redaktion.html" style="color:#ffffff;text-decoration:none;font-weight:700;font-size:15px">Redaktion</a>
 </div>
 <div style="display:flex;align-items:center;gap:8px">
-<a href="live.html" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:#ff007f;color:#0b0006;text-decoration:none;font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:15px;text-transform:uppercase"><span style="width:8px;height:8px;border-radius:999px;background:#0b0006" aria-hidden="true"></span>Live</a>
+<a href="live.html" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:#ff007f;color:#0b0006;text-decoration:none;font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:15px;text-transform:uppercase"><span class="pulse" style="width:8px;height:8px;border-radius:999px;background:#0b0006" aria-hidden="true"></span>Live</a>
 <button class="show-m menu-btn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mnav" style="width:44px;height:44px;border-radius:999px;border:0;background:#ffffff;align-items:center;justify-content:center;cursor:pointer">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b0006" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
 </button>
 </div>
 </nav>
 <div id="mnav" class="mnav" hidden>
-<a href="news.html">News</a><a href="index.html#videos">Videos</a><a href="lattecup.html">LatteCup</a><a href="redaktion.html">Redaktion</a><a href="live.html">Live</a>
+<a href="mixed-zone.html">Mixed-Zone</a><a href="index.html#videos">Videos</a><a href="lattecup.html">LatteCup</a><a href="redaktion.html">Redaktion</a><a href="live.html">Live</a>
 </div>
 </div>
 
@@ -146,7 +146,7 @@
 <!-- 5. LATTESCHÜSSE LIVE (BALD LIVE) -->
 <section class="cut stripes vp-m" style="padding-bottom:96px;position:relative">
 <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
-<span class="lbl" style="background:#ffffff;color:#0b0006;padding:8px 14px;border-radius:999px">● Bald live</span>
+<span class="lbl" style="background:#ffffff;color:#0b0006;padding:8px 14px;border-radius:999px"><span class="pulse" style="display:inline-block;width:8px;height:8px;border-radius:999px;background:#ff007f;margin-right:6px;vertical-align:1px" aria-hidden="true"></span>Bald live</span>
 <span class="d o x2" style="font-size:150px;line-height:.82">Latteschüsse<br>Live</span>
 <p style="margin:0;font-size:19px;line-height:28px;max-width:640px">Wie Radio, nur moderner: Malick kommentiert ausgewählte Spiele live aus dem Stadion auf YouTube. Du schaust das Spiel, die Emotionen kommen von uns, und die Community diskutiert live mit.</p>
 <a class="sk sk-p" href="#">Auf YouTube abonnieren</a>
@@ -160,35 +160,35 @@
 <h2 class="d x2" style="font-size:72px">Was bei uns <span class="o">läuft</span></h2>
 </div>
 
-<a href="news.html" class="vp-m" style="background:#ff007f;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:0;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
+<a href="mixed-zone.html" class="vp-m band" style="background:#ff007f;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:0;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
 <div class="wrap stack-m" style="display:flex;justify-content:space-between;align-items:center;gap:24px">
 <span style="display:flex;flex-direction:column;gap:8px;min-width:0"><span class="lbl" style="opacity:.8">Nach dem Abpfiff</span><span class="d x2" style="font-size:72px">Mixed Zone</span></span>
 <span style="font-size:17px;line-height:25px;font-weight:700;max-width:460px">Direkt nach dem Abpfiff holen wir die Stimmen aus der Mixed Zone: ehrlich, emotional und ungefiltert. →</span>
 </div>
 </a>
 
-<a href="#videos" class="vp-m" style="background:#0b0006;color:#ffffff;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 28px,100% 0,100% 100%,0 100%)">
+<a href="#videos" class="vp-m band" style="background:#0b0006;color:#ffffff;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 28px,100% 0,100% 100%,0 100%)">
 <div class="wrap stack-m" style="display:flex;justify-content:space-between;align-items:center;gap:24px">
 <span style="display:flex;flex-direction:column;gap:8px;min-width:0"><span class="lbl" style="opacity:.8">Stadion</span><span class="d x2" style="font-size:72px">Stadionvlog</span></span>
 <span style="font-size:17px;line-height:25px;font-weight:700;max-width:460px">Von St. Gallen bis Lissabon, vom Ligaalltag bis zum Cupfinale: Wir nehmen dich mit ins Stadion. →</span>
 </div>
 </a>
 
-<a href="#videos" class="vp-m" style="background:#ffffff;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
+<a href="#videos" class="vp-m band" style="background:#ffffff;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
 <div class="wrap stack-m" style="display:flex;justify-content:space-between;align-items:center;gap:24px">
 <span style="display:flex;flex-direction:column;gap:8px;min-width:0"><span class="lbl" style="opacity:.8"></span><span class="d x2" style="font-size:72px">Challenges</span></span>
 <span style="font-size:17px;line-height:25px;font-weight:700;max-width:460px">Von der Super League bis zum Breitensport: Wir fordern Profis und Amateure heraus, und am Ende zählt nur, wer trifft. →</span>
 </div>
 </a>
 
-<a href="lattecup.html" class="vp-m" style="background:#f5a705;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 28px,100% 0,100% 100%,0 100%)">
+<a href="lattecup.html" class="vp-m band" style="background:#f5a705;color:#0b0006;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 28px,100% 0,100% 100%,0 100%)">
 <div class="wrap stack-m" style="display:flex;justify-content:space-between;align-items:center;gap:24px">
 <span style="display:flex;flex-direction:column;gap:8px;min-width:0"><span class="lbl" style="opacity:.8">Live-Event</span><span class="d x2" style="font-size:72px">LatteCup</span></span>
 <span style="font-size:17px;line-height:25px;font-weight:700;max-width:460px">Wir kommen in deine Gemeinde. Wer die Latte trifft, wird LatteKing. →</span>
 </div>
 </a>
 
-<a href="#videos" class="vp-m" style="background:#880144;color:#ffffff;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
+<a href="#videos" class="vp-m band" style="background:#880144;color:#ffffff;text-decoration:none;padding:56px 0 72px;margin-top:-28px;clip-path:polygon(0 0,100% 28px,100% 100%,0 100%)">
 <div class="wrap stack-m" style="display:flex;justify-content:space-between;align-items:center;gap:24px">
 <span style="display:flex;flex-direction:column;gap:8px;min-width:0"><span class="lbl" style="opacity:.8"></span><span class="d x2" style="font-size:72px">Latteschuss des Monats</span></span>
 <span style="font-size:17px;line-height:25px;font-weight:700;max-width:460px">Die schönsten Lattentreffer des Monats, und du stimmst ab, wer gewinnt. →</span>
@@ -228,30 +228,44 @@
 
 </main>
 
-<footer style="width:100%;background:#0b0006;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;padding:80px 16px 32px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:32px;text-align:center">
-<img src="assets/logo.png" alt="Latteschüsse TV" style="width:96px;height:96px;border-radius:999px;box-shadow:0 0 0 4px #ff007f">
-<span class="x2" style="font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:96px;line-height:.9;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px #ff007f">Für alle, die<br>Fussball leben.</span>
-<span style="font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:32px;text-transform:uppercase;color:#ffffff;margin-top:-12px">Folge Latteschüsse.</span>
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
-<a href="https://www.instagram.com/latteschusse/" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#ff007f;color:#0b0006;text-decoration:none;font-weight:800;font-size:14px">Instagram</a>
-<a href="#" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#ffffff;color:#0b0006;text-decoration:none;font-weight:800;font-size:14px">YouTube</a>
-<a href="#" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#ffffff;color:#0b0006;text-decoration:none;font-weight:800;font-size:14px">TikTok</a>
+<footer style="width:100%;background:#0b0006;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;border-top:3px solid #ff007f;box-sizing:border-box">
+<div class="wrap" style="padding-top:56px;padding-bottom:28px;display:flex;flex-direction:column;gap:40px">
+<div class="c1-m" style="display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+<a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#ffffff">
+<img src="assets/logo.png" alt="" style="width:48px;height:48px;border-radius:999px;box-shadow:0 0 0 3px #ff007f">
+<span style="font-family:'roc-grotesk','Archivo Black',Impact,sans-serif;font-size:20px;text-transform:uppercase;line-height:1">Latteschüsse <span style="color:#ff007f">TV</span></span>
+</a>
+<p style="margin:0;font-size:15px;line-height:23px;color:#c9b3be;max-width:320px">Schweizer Fussball, mitten aus der Community – vom Stadion bis auf den Dorfplatz.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<a href="https://www.instagram.com/latteschusse/" style="display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);color:#ffffff;text-decoration:none;font-size:13px;font-weight:700">Instagram</a>
+<a href="#" style="display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);color:#ffffff;text-decoration:none;font-size:13px;font-weight:700">YouTube</a>
+<a href="#" style="display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);color:#ffffff;text-decoration:none;font-size:13px;font-weight:700">TikTok</a>
 </div>
-<nav aria-label="Footer" style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;font-size:15px;font-weight:700">
+</div>
+<nav aria-label="Footer Inhalt" style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+<span class="lbl" style="color:#ff007f;margin-bottom:4px">Inhalt</span>
 <a href="index.html#videos" style="color:#ffffff;text-decoration:none">Videos</a>
+<a href="mixed-zone.html" style="color:#ffffff;text-decoration:none">Mixed-Zone</a>
 <a href="lattecup.html" style="color:#ffffff;text-decoration:none">LatteCup</a>
-<a href="live.html" style="color:#ffffff;text-decoration:none;display:inline-flex;align-items:center;gap:6px">Live <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:#ff007f;color:#0b0006;border-radius:999px;padding:2px 8px">bald</span></a>
-<a href="index.html#social" style="color:#ffffff;text-decoration:none">Social Media</a>
-<span aria-hidden="true" style="color:#ff007f">✦</span>
+<a href="live.html" style="color:#ffffff;text-decoration:none;display:inline-flex;align-items:center;gap:8px">Live <span style="font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ff007f;border:1px solid #ff007f;border-radius:999px;padding:1px 7px">bald</span></a>
+</nav>
+<nav aria-label="Footer Latteschüsse TV" style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+<span class="lbl" style="color:#ff007f;margin-bottom:4px">Latteschüsse TV</span>
 <a href="redaktion.html" style="color:#ffffff;text-decoration:none">Über uns</a>
 <a href="redaktion.html#partner" style="color:#ffffff;text-decoration:none">Partner werden</a>
 <a href="#" style="color:#ffffff;text-decoration:none">Kontakt</a>
 </nav>
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;font-size:13px;color:#c9b3be">
-<span><strong style="color:#ffffff">[kontakt@latteschuesse.tv]</strong> – Für Medienanfragen, Partnerschaften und LatteCup-Gemeinden.</span>
+<div style="display:flex;flex-direction:column;gap:10px;font-size:15px;min-width:0">
+<span class="lbl" style="color:#ff007f;margin-bottom:4px">Kontakt</span>
+<span style="font-weight:700;overflow-wrap:anywhere">[kontakt@latteschuesse.tv]</span>
+<span style="font-size:13px;line-height:20px;color:#c9b3be">Für Medienanfragen, Partnerschaften und LatteCup-Gemeinden.</span>
 </div>
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;font-size:13px;color:#c9b3be">
-<span>© 2026 Latteschüsse TV</span><a href="#" style="color:#c9b3be">Impressum</a><a href="#" style="color:#c9b3be">Datenschutz</a>
+</div>
+<div class="stack-m" style="display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#c9b3be">
+<span>© 2026 Latteschüsse TV</span>
+<span style="display:flex;gap:20px"><a href="#" style="color:#c9b3be">Impressum</a><a href="#" style="color:#c9b3be">Datenschutz</a></span>
+</div>
 </div>
 </footer>
 

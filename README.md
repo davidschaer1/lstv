@@ -13,7 +13,7 @@ Alternativ per CLI im Ordner: `npx vercel` (Vorschau) bzw. `npx vercel --prod`.
 - `index.html` – Startseite
 - `lattecup.html` – LatteCup
 - `live.html` – Live
-- `news.html` – News & Berichte (Filter funktioniert)
+- `mixed-zone.html` – Mixed-Zone (Filter funktioniert)
 - `spielbericht.html` – Spielbericht (Vorlage)
 - `redaktion.html` – Über uns / Redaktion
 
