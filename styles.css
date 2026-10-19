@@ -1,0 +1,58 @@
+/* Latteschüsse TV – Variante C */
+/* Archivo Black – SIL Open Font License 1.1 (selbst gehostet) */
+@font-face{font-family:"Archivo Black";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/archivo-black-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Archivo Black";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/archivo-black-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+body{margin:0;background:#460024;color:#ffffff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:#f5a705}a:hover{color:#ffffff}
+.d{font-family:"roc-grotesk","Archivo Black",Impact,sans-serif;font-weight:800;text-transform:uppercase;line-height:.9;margin:0;overflow-wrap:break-word}
+.o{color:transparent;-webkit-text-stroke:2px #ff007f}
+.ow{color:transparent;-webkit-text-stroke:2px #ffffff}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;line-height:16px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px;box-sizing:border-box;width:100%}
+.sk{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 34px;font-family:"roc-grotesk","Archivo Black",Impact,sans-serif;font-size:17px;text-transform:uppercase;text-decoration:none;clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);box-sizing:border-box;border:0;cursor:pointer;white-space:nowrap}
+.sk-p{background:#ff007f;color:#0b0006}.sk-p:hover{background:#ffffff;color:#0b0006}
+.sk-n{background:#0b0006;color:#ffffff}.sk-n:hover{background:#ff007f;color:#0b0006}
+.sk-w{background:#ffffff;color:#0b0006}.sk-w:hover{background:#f5a705;color:#0b0006}
+.sk-g{background:#f5a705;color:#0b0006}.sk-g:hover{background:#ffffff;color:#0b0006}
+.lt{display:flex;align-items:stretch}
+.lt > :first-child{background:#ff007f;color:#0b0006;padding:10px 16px;display:flex;align-items:center;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);padding-right:24px}
+.lt > :last-child{background:#0b0006;color:#ffffff;padding:10px 18px;display:flex;align-items:center;flex:1;min-width:0}
+.cut{clip-path:polygon(0 56px,100% 0,100% 100%,0 100%);padding-top:120px!important;margin-top:-56px}
+.cutb{clip-path:polygon(0 0,100% 0,100% calc(100% - 56px),0 100%)}
+.stripes{background:repeating-linear-gradient(135deg,#0b0006 0 28px,#880144 28px 56px)}
+.ph{background:repeating-linear-gradient(135deg,#0b0006 0 28px,#260011 28px 56px)}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.rail > *{scroll-snap-align:start;flex:none}
+.card{transition:transform .2s ease}.card:hover{transform:translateY(-6px) rotate(-1deg)}
+.pill a{color:#ffffff;text-decoration:none;font-weight:700;font-size:15px}.pill a:hover{color:#ff007f}
+.show-m{display:none!important}
+details summary{cursor:pointer;list-style:none}details summary::-webkit-details-marker{display:none}
+:focus-visible{outline:3px solid #f5a705;outline-offset:3px}
+@media (max-width:760px){
+.wrap{padding:0 16px!important}
+.x1{font-size:48px!important}.x2{font-size:38px!important}.x3{font-size:28px!important}.x4{font-size:20px!important}
+.n1{font-size:22px!important}
+.c1-m{grid-template-columns:minmax(0,1fr)!important}
+.c2-m{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.stack-m{flex-direction:column!important;align-items:stretch!important}
+.fx-m{flex:1 1 auto!important;width:100%!important;clip-path:none!important}
+.hide-m{display:none!important}
+.show-m{display:inline-flex!important}
+.vp-m{padding-top:48px!important;padding-bottom:48px!important}
+.cut{padding-top:88px!important}
+.sk{width:100%;white-space:normal;font-size:15px}
+.rot0-m{transform:none!important}
+.pm{padding:40px 20px!important}
+.r-m{border-radius:24px!important}
+.mas{column-count:1!important}
+.gm{border-width:8px!important;padding:32px 12px 40px!important}
+}
+@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Mobile-Menü */
+.mnav{max-width:1160px;margin:8px auto 0;background:#0b0006;border-radius:24px;padding:8px;display:flex;flex-direction:column;box-sizing:border-box}
+.mnav[hidden]{display:none}
+.mnav a{color:#ffffff;text-decoration:none;font-family:"roc-grotesk","Archivo Black",Impact,sans-serif;font-size:22px;text-transform:uppercase;padding:14px 16px;border-radius:16px}
+.mnav a:hover{background:#ff007f;color:#0b0006}
+@media (min-width:761px){.mnav{display:none!important}}
