@@ -18,8 +18,8 @@ Alternativ per CLI im Ordner: `npx vercel` (Vorschau) bzw. `npx vercel --prod`.
 - `redaktion.html` – Über uns / Redaktion
 
 ## Schriften
-- Titel: Roc Grotesk (Adobe Fonts). Ist kein Kit eingebunden, wird – wie im Design-Canvas – Archivo Black verwendet (selbst gehostet in `assets/fonts`).
-  Für Roc Grotesk: in jeder HTML-Datei die auskommentierte Typekit-Zeile aktivieren und die Kit-ID eintragen.
+- Titel: Roc Grotesk über Adobe Fonts (Kit `fmt3emr`). Fallback: Archivo Black (selbst gehostet in `assets/fonts`).
+  Wichtig: Im Adobe-Fonts-Kit unter «Domains» die Vercel-Adresse (z. B. `*.vercel.app`) und später die eigene Domain eintragen, sonst lädt die Schrift nicht.
 - Lauftext: Helvetica.
 
 ## Noch offen
