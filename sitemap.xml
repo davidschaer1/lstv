@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lstv.vercel.app/</loc></url>
-  <url><loc>https://lstv.vercel.app/lattecup</loc></url>
-  <url><loc>https://lstv.vercel.app/ueber-lstv</loc></url>
-  <url><loc>https://lstv.vercel.app/live</loc></url>
-  <url><loc>https://lstv.vercel.app/mixed-zone</loc></url>
-  <url><loc>https://lstv.vercel.app/spielbericht</loc></url>
-  <url><loc>https://lstv.vercel.app/impressum</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/lattecup</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/ueber-lstv</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/live</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/mixed-zone</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/spielbericht</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/impressum</loc></url>
+  <url><loc>https://lstv-iota.vercel.app/datenschutz</loc></url>
 </urlset>

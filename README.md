@@ -6,10 +6,10 @@ Statische Website mit einer kleinen Vercel-Funktion für Instagram. Kein Build n
 - `/` Startseite · `/mixed-zone` · `/lattecup` · `/live` (Coming Soon) · `/ueber-lstv` · `/impressum` · `/spielbericht` (Vorlage)
 
 ## Vor dem Livegang
-1. **Domain eintragen:** In allen Dateien `https://lstv.vercel.app` durch die echte Adresse ersetzen
-   (HTML-Dateien, `sitemap.xml`, `robots.txt`). Wichtig für Google (Canonical, Sitemap).
+1. **Domain:** Aktuell `https://lstv-iota.vercel.app`. Bei einer eigenen Domain in allen Dateien ersetzen
+   (HTML-Dateien, `sitemap.xml`, `robots.txt`).
 2. **Impressum:** Platzhalter in `impressum.html` ausfüllen (Rechtsform, Adresse, ggf. UID).
-3. **Datenschutzerklärung:** fehlt noch (Link im Footer zeigt auf `#`).
+3. **Datenschutzerklärung:** Entwurf unter `/datenschutz` – Platzhalter ausfüllen und prüfen lassen.
 4. **Links:** YouTube- und TikTok-Links sind Platzhalter (`href="#"`).
 5. **Adobe Fonts:** Im Web-Projekt `fmt3emr` die Domain(s) freigeben (z. B. `*.vercel.app` und eure Domain).
 
