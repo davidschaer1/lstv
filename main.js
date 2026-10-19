@@ -82,6 +82,10 @@ filters.forEach(function(b){
     });
   },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
   items.forEach(function(el){io.observe(el)});
+  var ticking=false;
+  function sweep(){ticking=false;var vh=window.innerHeight;items.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh){el.classList.add('in');io.unobserve(el)}})}
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(sweep)}},{passive:true});
+  window.addEventListener('load',sweep);
 
   // Zahlen hochzählen
   var nums=[].slice.call(document.querySelectorAll('main span')).filter(function(s){return s.children.length===0&&/^\d’\d{3}\+$/.test(s.textContent.trim())});
@@ -90,9 +94,35 @@ filters.forEach(function(b){
       if(!e.isIntersecting) return; nio.unobserve(e.target);
       var el=e.target,target=parseInt(el.textContent.replace(/\D/g,''),10),t0=null,dur=1400;
       function fmt(n){var s=String(n);return (s.length>3?s.slice(0,-3)+'’'+s.slice(-3):s)+'+'}
-      function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(target*ease/100)*100);if(p<1)requestAnimationFrame(step);else el.textContent=fmt(target)}
+      function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=fmt(Math.round(target*ease/100)*100);if(p<1)requestAnimationFrame(step);else el.textContent=el.dataset.final||fmt(target)}
       el.style.minWidth=el.offsetWidth+'px';el.textContent=fmt(0);requestAnimationFrame(step);
     });
   },{threshold:0.5});
   nums.forEach(function(n){nio.observe(n)});
+})();
+
+// Instagram: Follower und neueste Reels (über /api/instagram)
+(function(){
+  var rail=document.querySelector('[data-ig-videos]');
+  var counters=document.querySelectorAll('[data-ig="followers"]');
+  if(!rail&&!counters.length) return;
+  function fmt(n){var r=Math.floor(n/100)*100,s=String(r);return (s.length>3?s.slice(0,-3)+'’'+s.slice(-3):s)+'+'}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  fetch('/api/instagram').then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d) return;
+    if(d.followers){counters.forEach(function(el){el.dataset.final=fmt(d.followers);el.textContent=fmt(d.followers)})}
+    if(rail&&d.videos&&d.videos.length){
+      var logo=rail.querySelector('img');var logoSrc=logo?logo.getAttribute('src'):'assets/logo.png';
+      rail.innerHTML=d.videos.map(function(v){
+        var date=v.timestamp?new Date(v.timestamp).toLocaleDateString('de-CH',{day:'2-digit',month:'2-digit',year:'numeric'}):'';
+        return '<a href="'+esc(v.permalink)+'" target="_blank" rel="noopener" class="card in" style="width:270px;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#ffffff">'+
+          '<span class="ph" style="position:relative;display:block;aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 0 0 3px #ff007f">'+
+          (v.thumbnail?'<img src="'+esc(v.thumbnail)+'" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">':'')+
+          '<img src="'+logoSrc+'" alt="" style="position:absolute;top:12px;left:12px;width:36px;height:36px;border-radius:999px;box-shadow:0 0 0 2px #ffffff">'+
+          '<span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,0,6,0) 45%,rgba(11,0,6,.92) 100%)"></span>'+
+          '<span style="position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-direction:column;gap:6px"><span class="lbl" style="color:#f5a705">Reel · '+esc(date)+'</span><span class="d" style="font-size:20px">'+esc(v.caption||'Neues Video auf Instagram')+'</span></span>'+
+          '</span></a>';
+      }).join('');
+    }
+  }).catch(function(){});
 })();

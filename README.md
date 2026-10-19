@@ -1,27 +1,37 @@
 # Latteschüsse TV – Website (Variante C)
 
-Statische Website, 1:1 aus dem Claude-Design (Variante C) generiert. Kein Build nötig.
-
-## Auf Vercel veröffentlichen
-1. vercel.com → «Add New…» → «Project» → diesen Ordner hochladen (oder via GitHub-Repo verbinden).
-2. Framework Preset: «Other». Build Command und Output Directory leer lassen.
-3. Deploy. `vercel.json` sorgt für saubere URLs (z. B. `/lattecup` statt `/lattecup.html`).
-
-Alternativ per CLI im Ordner: `npx vercel` (Vorschau) bzw. `npx vercel --prod`.
+Statische Website mit einer kleinen Vercel-Funktion für Instagram. Kein Build nötig.
 
 ## Seiten
-- `index.html` – Startseite
-- `lattecup.html` – LatteCup
-- `live.html` – Live
-- `mixed-zone.html` – Mixed-Zone (Filter funktioniert)
-- `spielbericht.html` – Spielbericht (Vorlage)
-- `redaktion.html` – Über uns / Redaktion
+- `/` Startseite · `/mixed-zone` · `/lattecup` · `/live` (Coming Soon) · `/ueber-lstv` · `/impressum` · `/spielbericht` (Vorlage)
+
+## Vor dem Livegang
+1. **Domain eintragen:** In allen Dateien `https://lstv.vercel.app` durch die echte Adresse ersetzen
+   (HTML-Dateien, `sitemap.xml`, `robots.txt`). Wichtig für Google (Canonical, Sitemap).
+2. **Impressum:** Platzhalter in `impressum.html` ausfüllen (Rechtsform, Adresse, ggf. UID).
+3. **Datenschutzerklärung:** fehlt noch (Link im Footer zeigt auf `#`).
+4. **Links:** YouTube- und TikTok-Links sind Platzhalter (`href="#"`).
+5. **Adobe Fonts:** Im Web-Projekt `fmt3emr` die Domain(s) freigeben (z. B. `*.vercel.app` und eure Domain).
+
+## Instagram-Anbindung (Follower + neueste Reels)
+Die Funktion `api/instagram.js` holt Follower-Zahl und die neuesten Reels von @latteschusse.
+Ohne Token zeigt die Website einfach die festen Werte (3’500+ und die Beispiel-Videos).
+
+1. Instagram-Konto auf **Business- oder Creator-Konto** umstellen (Instagram-App → Einstellungen → Kontotyp).
+2. Auf developers.facebook.com eine App anlegen → Produkt **«Instagram» → «API setup with Instagram login»**.
+3. Das Konto @latteschusse hinzufügen und einen **Access Token** generieren (Berechtigung `instagram_business_basic`).
+4. In Vercel: Projekt → **Settings → Environment Variables** → `IG_ACCESS_TOKEN` = Token → neu deployen.
+5. Der Token läuft nach **60 Tagen** ab. Verlängern (solange er gültig ist):
+   `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=DEIN_TOKEN`
+   und den neuen Token in Vercel ersetzen.
+
+Daten werden 1 Stunde zwischengespeichert. Angezeigt werden Follower abgerundet auf Hunderter (z. B. 3’569 → 3’500+).
+
+## SEO / GEO
+- Titel, Beschreibung, Canonical, Open Graph pro Seite
+- Strukturierte Daten (JSON-LD): Organisation, Website, Breadcrumbs, FAQ
+- `sitemap.xml`, `robots.txt` (inkl. Freigabe für KI-Crawler), `llms.txt` (Kurzprofil für KI-Suchmaschinen)
+- Nach dem Livegang: Google Search Console einrichten und `sitemap.xml` einreichen.
 
 ## Schriften
-- Titel: Roc Grotesk über Adobe Fonts (Kit `fmt3emr`). Fallback: Archivo Black (selbst gehostet in `assets/fonts`).
-  Wichtig: Im Adobe-Fonts-Kit unter «Domains» die Vercel-Adresse (z. B. `*.vercel.app`) und später die eigene Domain eintragen, sonst lädt die Schrift nicht.
-- Lauftext: Helvetica.
-
-## Noch offen
-- YouTube- und TikTok-Links sind Platzhalter (`href="#"`).
-- Texte in [eckigen Klammern] sind Platzhalter.
+Titel: Roc Grotesk (Adobe Fonts, Kit `fmt3emr`), Fallback Archivo Black (selbst gehostet). Lauftext: Helvetica.
