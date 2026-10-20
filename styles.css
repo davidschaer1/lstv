@@ -50,7 +50,7 @@ details summary{cursor:pointer;list-style:none}details summary::-webkit-details-
 .nw{white-space:normal}
 .hero-h{font-size:38px!important}
 .hero-r{min-height:440px!important;align-items:stretch!important}
-.hero-img{right:50%!important;transform:translateX(50%);height:92%!important}
+.hero-img{right:50%!important;transform:translateX(50%);top:auto!important;bottom:0;height:92%!important}
 }
 @media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
 html{scroll-behavior:smooth}
@@ -77,9 +77,10 @@ footer a:hover{color:#ff007f!important}
 .band:hover .d{transform:translateX(18px)}
 .pulse{animation:pulse 1.6s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.3;transform:scale(.65)}}
-.marquee{display:inline-flex;will-change:transform;animation:marquee 38s linear infinite}
-.marquee > span{padding-right:.5em;white-space:nowrap}
-@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{display:inline-flex;will-change:transform;animation:marquee 40s linear infinite}
+.marquee > span{white-space:nowrap}
+@keyframes marquee{to{transform:translateX(-25%)}}
+.tv-ticker:hover .marquee{animation-play-state:paused}
 .rv{opacity:0;translate:0 32px;transition:opacity .8s ease,translate .8s cubic-bezier(.2,.8,.2,1),transform .2s ease}
 .rv.in{opacity:1;translate:0 0}
 .hi{opacity:0;animation:heroIn .9s cubic-bezier(.2,.8,.2,1) forwards}
