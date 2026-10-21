@@ -10,8 +10,6 @@ Statische Website mit einer kleinen Vercel-Funktion für Instagram. Kein Build n
    (HTML-Dateien, `sitemap.xml`, `robots.txt`).
 2. **Impressum:** Platzhalter in `impressum.html` ausfüllen (Rechtsform, Adresse, ggf. UID).
 3. **Datenschutzerklärung:** Entwurf unter `/datenschutz` – Platzhalter ausfüllen und prüfen lassen.
-4. **Links:** YouTube- und TikTok-Links sind Platzhalter (`href="#"`).
-5. **Adobe Fonts:** Im Web-Projekt `fmt3emr` die Domain(s) freigeben (z. B. `*.vercel.app` und eure Domain).
 
 ## Instagram-Anbindung (Follower + neueste Reels)
 Die Funktion `api/instagram.js` holt Follower-Zahl und die neuesten Reels von @latteschusse.
@@ -31,7 +29,7 @@ Daten werden 1 Stunde zwischengespeichert. Angezeigt werden Follower abgerundet 
 - Titel, Beschreibung, Canonical, Open Graph pro Seite
 - Strukturierte Daten (JSON-LD): Organisation, Website, Breadcrumbs, FAQ
 - `sitemap.xml`, `robots.txt` (inkl. Freigabe für KI-Crawler), `llms.txt` (Kurzprofil für KI-Suchmaschinen)
-- Nach dem Livegang: Google Search Console einrichten und `sitemap.xml` einreichen.
+- Google Search Console ist eingerichtet (Domain-Property latteschüsse.ch), Sitemap eingereicht.
 
 ## Schriften
 Titel: Roc Grotesk (Adobe Fonts, Kit `fmt3emr`), Fallback Archivo Black (selbst gehostet). Lauftext: Helvetica.
