@@ -62,10 +62,13 @@ filters.forEach(function(b){
   }
 
   // Scroll-Reveal
-  var sel='main h2, main .card, main .lt, main details, main .band, main .rail > *, main .c1-m > *, main .c2-m > *, main .mas > *, main section > .wrap > p, main section > .wrap > .sk, main blockquote, main article';
+  var sel='main h2, main .card, main .lt, main details, main .band, main .rail > *, main .logo-wall > li, main .reels > *, main .c1-m > *, main .c2-m > *, main .mas > *, main section > .wrap > p, main section > .wrap > .sk, main blockquote, main article';
   var items=[].slice.call(document.querySelectorAll(sel)).filter(function(el){return !(first&&first.contains(el))&&!el.classList.contains('hi')});
-  items.forEach(function(el){
+  items.forEach(function(el,k){
     el.classList.add('rv');
+    if(el.classList.contains('band')) el.classList.add(k%2?'rv-r':'rv-l');
+    else if(el.closest('.reels,.logo-wall,.c2-m')) el.classList.add('rv-s');
+    else if(el.classList.contains('card')&&el.parentNode&&el.parentNode.children.length>1) el.classList.add([].indexOf.call(el.parentNode.children,el)%2?'rv-r':'rv-l');
     var sib=el.parentNode?[].indexOf.call(el.parentNode.children,el):0;
     el.style.transitionDelay=(Math.min(sib,6)*0.08)+'s';
   });

@@ -3,13 +3,12 @@
 Statische Website mit einer kleinen Vercel-Funktion für Instagram. Kein Build nötig.
 
 ## Seiten
-- `/` Startseite · `/mixed-zone` · `/lattecup` · `/live` (Coming Soon) · `/ueber-lstv` · `/impressum` · `/spielbericht` (Vorlage)
+- `/` Startseite · `/mixed-zone` · `/lattecup` · `/live` (Coming Soon) · `/ueber-lstv` · `/impressum`
 
 ## Vor dem Livegang
 1. **Domain:** `https://www.latteschüsse.ch` (technisch `www.xn--latteschsse-0hb.ch`). Bei einem Domainwechsel in allen Dateien ersetzen
    (HTML-Dateien, `sitemap.xml`, `robots.txt`).
-2. **Impressum:** Platzhalter in `impressum.html` ausfüllen (Rechtsform, Adresse, ggf. UID).
-3. **Datenschutzerklärung:** Entwurf unter `/datenschutz` – Platzhalter ausfüllen und prüfen lassen.
+2. **Impressum/Datenschutz:** Ausgefüllt mit Name und E-Mail. Für mehr Rechtssicherheit eine Postadresse ergänzen und prüfen lassen.
 
 ## Instagram-Anbindung (Follower + neueste Reels)
 Die Funktion `api/instagram.js` holt Follower-Zahl und die neuesten Reels von @latteschusse.
