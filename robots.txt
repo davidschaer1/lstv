@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://lstv-iota.vercel.app/sitemap.xml
+Sitemap: https://www.xn--latteschsse-0hb.ch/sitemap.xml

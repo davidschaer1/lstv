@@ -6,7 +6,7 @@ Statische Website mit einer kleinen Vercel-Funktion für Instagram. Kein Build n
 - `/` Startseite · `/mixed-zone` · `/lattecup` · `/live` (Coming Soon) · `/ueber-lstv` · `/impressum` · `/spielbericht` (Vorlage)
 
 ## Vor dem Livegang
-1. **Domain:** Aktuell `https://lstv-iota.vercel.app`. Bei einer eigenen Domain in allen Dateien ersetzen
+1. **Domain:** `https://www.latteschüsse.ch` (technisch `www.xn--latteschsse-0hb.ch`). Bei einem Domainwechsel in allen Dateien ersetzen
    (HTML-Dateien, `sitemap.xml`, `robots.txt`).
 2. **Impressum:** Platzhalter in `impressum.html` ausfüllen (Rechtsform, Adresse, ggf. UID).
 3. **Datenschutzerklärung:** Entwurf unter `/datenschutz` – Platzhalter ausfüllen und prüfen lassen.
