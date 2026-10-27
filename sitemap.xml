@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.xn--latteschsse-0hb.ch/</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/lattecup</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/ueber-lstv</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/live</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/mixed-zone</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/impressum</loc></url>
-  <url><loc>https://www.xn--latteschsse-0hb.ch/datenschutz</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://www.xn--latteschsse-0hb.ch/</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/og-image.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/lattecup</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/lattecup-gruppe.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/ueber-lstv</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/malick-fcsg.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/live</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/og-image.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/mixed-zone</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/fussballnacht.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/impressum</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/og-image.jpg</image:loc></image:image></url>
+  <url><loc>https://www.xn--latteschsse-0hb.ch/datenschutz</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.xn--latteschsse-0hb.ch/assets/og/og-image.jpg</image:loc></image:image></url>
 </urlset>

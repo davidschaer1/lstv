@@ -21,7 +21,7 @@ filters.forEach(function(b){
       x.style.borderColor=on?'#ff007f':'rgba(255,255,255,.35)';
     });
     document.querySelectorAll('[data-cat]').forEach(function(c){
-      c.style.display=(k==='Alle'||c.getAttribute('data-cat')===k)?'block':'none';
+      c.style.display=(k==='Alle'||c.getAttribute('data-cat')===k)?'':'none';
     });
   });
 });
