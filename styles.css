@@ -165,3 +165,7 @@ h2.rv.in{clip-path:inset(0 0 -10% 0);translate:0 0}
 .hero-img{transform:none!important;translate:-50% 0}
 }
 @media (prefers-reduced-motion:reduce){.hero-img,#social .card > span:first-child{animation:none!important}h2.rv{clip-path:none!important}}
+
+/* Referenzen */
+.ref-card:hover{transform:translateY(-6px)}
+@media (max-width:760px){.ref-card{min-height:740px!important}.ref-card blockquote,.ref-card figcaption{padding-left:22px!important;padding-right:22px!important}.ref-card blockquote p{font-size:17px!important;line-height:25px!important}#referenzen{padding-top:72px!important}}
