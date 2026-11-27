@@ -168,7 +168,7 @@ h2.rv.in{clip-path:inset(0 0 -10% 0);translate:0 0}
 
 /* Referenzen */
 .ref-card:hover{transform:translateY(-6px)}
-@media (max-width:760px){.ref-card{min-height:740px!important}.ref-card blockquote,.ref-card figcaption{padding-left:22px!important;padding-right:22px!important}.ref-card blockquote p{font-size:17px!important;line-height:25px!important}#referenzen{padding-top:72px!important}}
+@media (max-width:760px){.ref-card{min-height:740px!important}.ref-card blockquote,.ref-card figcaption{padding-left:22px!important;padding-right:22px!important}.ref-card blockquote p{font-size:17px!important;line-height:25px!important}#referenzen{padding-top:8px!important}}
 
 
 .hx + .tv-ticker{border-top-color:#0b0006!important;margin-top:0!important;position:relative;z-index:2}
